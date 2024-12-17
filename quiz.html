@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz - HTML, CSS, JS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Quizz - HTML, CSS et JavaScript</h1>
+            <nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Mon Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="univers_et_engagement.html">Mon Univers</a></li>
+                        <li><a href="quiz.html">Quizz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section class="quiz-section">
+            <h2>Testez vos connaissances en HTML, CSS et JavaScript !</h2>
+
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. Quelle balise HTML est utilisée pour afficher un titre ?</p>
+                    <label>
+                        <input type="radio" name="q1" value="h1" /> <code>&lt;h1&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="h2" /> <code>&lt;h2&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="title" /> <code>&lt;title&gt;</code>
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>2. Quelle propriété CSS est utilisée pour changer la couleur du texte ?</p>
+                    <label>
+                        <input type="radio" name="q2" value="color" /> color
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="background-color" /> background-color
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="font-size" /> font-size
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>3. Quel est le résultat de <code>console.log(2 + 3);</code> en JavaScript ?</p>
+                    <label>
+                        <input type="radio" name="q3" value="5" /> 5
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="23" /> 23
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="undefined" /> undefined
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>4. Quelle propriété CSS permet de définir l'espacement entre les caractères ?</p>
+                    <label>
+                        <input type="radio" name="q4" value="line-height" /> line-height
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="letter-spacing" /> letter-spacing
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="text-align" /> text-align
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>5. Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?</p>
+                    <label>
+                        <input type="radio" name="q5" value="push" /> push()
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="pop" /> pop()
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q5" value="shift" /> shift()
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>6. Quelle est la balise HTML utilisée pour insérer une image ?</p>
+                    <label>
+                        <input type="radio" name="q6" value="img" /> <code>&lt;img&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="image" /> <code>&lt;image&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q6" value="src" /> <code>&lt;src&gt;</code>
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>7. Comment déclare-t-on une variable en JavaScript ?</p>
+                    <label>
+                        <input type="radio" name="q7" value="let" /> let
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q7" value="var" /> var
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q7" value="const" /> const
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>8. Quel est le rôle de la balise <code>&lt;div&gt;</code> en HTML ?</p>
+                    <label>
+                        <input type="radio" name="q8" value="Structure le contenu" /> Structure le contenu
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q8" value="Mettre une image" /> Mettre une image
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q8" value="Créer un lien" /> Créer un lien
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>9. Quel sélecteur CSS permet de sélectionner tous les éléments d'une classe ?</p>
+                    <label>
+                        <input type="radio" name="q9" value=".class" /> .class
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q9" value="#id" /> #id
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q9" value="*element" /> *element
+                    </label><br>
+                </div>
+
+                <div class="question">
+                    <p>10. Quel est le format de base de l'architecture d'un projet web ?</p>
+                    <label>
+                        <input type="radio" name="q10" value="HTML, CSS, JavaScript" /> HTML, CSS, JavaScript
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q10" value="Java, C++, Python" /> Java, C++, Python
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q10" value="PHP, SQL" /> PHP, SQL
+                    </label><br>
+                </div>
+
+                <button type="button" onclick="checkAnswers()">Valider</button>
+            </form>
+
+            <div id="result" style="display: none;">
+                <h3>Résultat :</h3>
+                <p id="score"></p>
+                <ul id="correctAnswers"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Quizz- Tous droits réservés</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

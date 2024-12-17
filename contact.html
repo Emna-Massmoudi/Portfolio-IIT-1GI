@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="header-container">
+            <h1>Contactez-moi</h1>
+            <nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Mon Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="univers_et_engagement.html">Mon Univers</a></li>
+                        <li><a href="quiz.html">Quizz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section class="contact-form">
+            <h2>Envoyez-moi un message</h2>
+            <p>Vous pouvez m'envoyer un message via le formulaire ci-dessous.</p>
+
+            <!-- Formulaire de contact -->
+            <form id="contact-form" onsubmit="return envoyerMessage()">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Votre email" value="votre.email@example.com" />
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Votre message" rows="8"></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Ajout d'un conteneur pour forcer un espacement minimum de la page -->
+    <div class="page-end"></div> <!-- Cet élément permet d'étirer la page quand elle est trop courte -->
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 Mon Site Personnel - Tous droits réservés</p>
+    </footer>
+
+
+     <!-- Script JavaScript -->
+    <script type="text/javascript">
+        function envoyerMessage() {
+            alert('Votre message a été envoyé avec succès !');
+            return false;
+        }
+    </script>
+
+</body>
+</html>

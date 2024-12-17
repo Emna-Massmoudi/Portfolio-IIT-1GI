@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temoignage IIT</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;  /* Nécessaire pour positionner le bouton à l'intérieur de l'en-tête */
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center; 
+}
+
+
+header button {
+    position: absolute;  
+    left: 20px;  
+    top: 20px;  
+    width: 100px; 
+    height: 40px;
+    background-color: #ff6600;  
+    color: white; 
+    border: none;
+    padding: 8px 12px; 
+    font-size: 1em; 
+    border-radius: 5px; 
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+header button:hover {
+    background-color: #e55b00;  
+}
+
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .test1 {
+            margin-top: 40px;
+        }
+
+        .test {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff6600;
+        }
+
+        .test h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .test p {
+            font-style: italic;
+            color: #666;
+        }
+
+        
+        .video-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+
+
+<header>
+    <h1>Témoignage sur IIT</h1>
+    <!-- Bouton retour en arrière -->
+    <button class="back-button" onclick="window.history.back();">
+        &#8592; Retour
+    </button>
+</header>
+
+
+<div class="content">
+    <h2>À propos de l'IIT</h2>
+    <p>L’Institut International de Technologie de Sfax (IIT), porté par l’ambition de la qualité et le souci de l’excellence, a su et pu se faire un nom et une renommée dans le monde universitaire national et international. Durant ces quelques années, IIT a acquiert une réputation de rigueur et notamment d’ouverture à l’international. La mission principale demeure celle de doter ses diplômés, grâce à la qualité des enseignements, et aux nombreuses certifications,  des  meilleures  chances  de faire face aux  nouvelles  exigences  d’un  monde professionnel internationalisé.</p>
+    <a href="https://www.google.com/maps/place/IIT+-+Institut+International+de+Technologie/@34.8410896,10.7551184,17z/data=!3m1!4b1!4m6!3m5!1s0x1301d179b20acfe7:0x7a82ded557c84c94!8m2!3d34.8410896!4d10.7551184!16s%2Fm%2F0w7k_t_?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Lieu</a>
+    
+    <div class="video-container">
+        <h2>Vidéo Témoignage</h2>
+        <video controls autoplay muted>
+            <source src="videos/Temoignage.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+    </div>
+    
+
+    <h2>Témoignages d'étudiants</h2>
+    <div class="test1">
+        <div class="test">
+            <h3>Mon expérience</h3>
+            <p>L’Institut International de Technologie de Sfax (IIT) est un établissement d'enseignement supérieur que je considère comme une véritable plateforme de développement académique et professionnel. Au sein de cet institut, j'ai pu bénéficier d'une formation de qualité, soutenue par des enseignants passionnés et expérimentés. Les infrastructures modernes, associées à des méthodes pédagogiques innovantes, m'ont permis d'acquérir des compétences solides, tant sur le plan théorique que pratique. Ce qui distingue particulièrement l'IIT, c’est son environnement dynamique et sa capacité à favoriser l’échange entre étudiants et professionnels, grâce à des partenariats internationaux et des stages en entreprise. L'atmosphère stimulante et collaborative m'a permis de me dépasser et de mieux me préparer aux défis du monde professionnel. Mon expérience à l'IIT a été une étape clé dans mon parcours académique et m’a ouvert de nombreuses opportunités de carrière.</p>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
