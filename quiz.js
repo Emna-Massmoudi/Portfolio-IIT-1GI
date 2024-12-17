@@ -13,33 +13,30 @@ function checkAnswers() {
     };
     let score = 0;
     let correctAnswersList = [];
-
-    // Récupérer toutes les réponses de l'utilisateur
     const form = document.getElementById('quizForm');
-    const answers = form.querySelectorAll('input[type="radio"]:checked');
 
-    // Vérification des réponses
-    answers.forEach(answer => {
-        const question = answer.name;
-        const userAnswer = answer.value;
+    for (let i = 1; i <= 10; i++) {
+        const questionName = `q${i}`;
+        const selectedAnswer = form.elements[questionName];
 
-        if (correctAnswers[question] === userAnswer) {
-            score++;  // Si la réponse est correcte, incrémenter le score
-            correctAnswersList.push(`${question}: ${userAnswer}`);  // Ajouter la bonne réponse à la liste
+        
+        if (selectedAnswer && selectedAnswer.value === correctAnswers[questionName]) {
+            score++;  
+            correctAnswersList.push(`${questionName}: ${selectedAnswer.value}`);
         }
-    });
+    }
 
-    // Affichage des résultats
+   
     const resultDiv = document.getElementById('result');
     resultDiv.style.display = 'block';
-    document.getElementById('score').textContent = `Votre score est : ${score} sur 10`;  // Afficher la note
+    document.getElementById('score').textContent = `Votre score est : ${score} sur 10`;
 
-    // Affichage des réponses correctes
+    
     const correctAnswersListElement = document.getElementById('correctAnswers');
-    correctAnswersListElement.innerHTML = '';  // Vider la liste avant de la remplir
+    correctAnswersListElement.innerHTML = '';
     correctAnswersList.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = item;  // Ajouter chaque réponse correcte dans la liste
+        li.textContent = item;
         correctAnswersListElement.appendChild(li);
     });
 }
